@@ -6,4 +6,19 @@
 //  Copyright © 2018 Daniil Shilintsev. All rights reserved.
 //
 
-#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char str[50], char reverse[50];
+    scanf("%s", str);
+    int length = strlen(str);
+    int j = length -1;
+    int i;
+    for (i = 0; i < length; i++ ){
+        reverse[i] = str[j];
+        j--;
+    }
+    printf("%s", reverse);
+    return 0;
+}
